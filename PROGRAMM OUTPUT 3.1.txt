@@ -1,0 +1,14 @@
+Enter an integer: 3
+3 is odd.
+
+
+...Program finished with exit code 0
+Press ENTER to exit console.
+
+
+Enter an integer: 6
+6 is even
+
+
+  ...program finished with exit code 0
+  press ENTER to exit console

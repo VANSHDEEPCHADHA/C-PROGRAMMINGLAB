@@ -1,0 +1,15 @@
+Enter a character: A
+A is a vowel.
+
+
+...Program finished with exit code 0
+Press ENTER to exit console.
+
+
+
+Enter a character: B
+B is a consonant.
+
+
+ ...Program finished with exit code 0
+ PRESS ENTER to exit console.

@@ -1,0 +1,6 @@
+Enter the coordinates of the first point (x1 y1): 4,2
+Enter the coordinates of the second point (x2 y2): The Euclidean distance between the two points is: 4.00
+
+
+...Program finished with exit code 0
+Press ENTER to exit console.

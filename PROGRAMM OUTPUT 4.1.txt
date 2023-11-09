@@ -1,0 +1,6 @@
+Enter a non-negative integer: 4
+Factorial of 4 is 24
+
+
+...Program finished with exit code 0
+Press ENTER to exit console.

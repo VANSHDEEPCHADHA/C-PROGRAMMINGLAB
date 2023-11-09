@@ -1,0 +1,12 @@
+1. Calculate the area and perimeter of a circle
+2. Calculate the area and perimeter of a square
+3. Calculate the area and perimeter of a rectangle
+Enter your choice (1/2/3): 3
+Enter the length and width of the rectangle: 5
+7
+Area: 35.000000
+Perimeter: 24.000000
+
+
+...Program finished with exit code 0
+Press ENTER to exit console.

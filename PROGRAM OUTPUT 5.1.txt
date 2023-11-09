@@ -1,0 +1,6 @@
+Enter a positive integer: 2
+2 is a prime number.
+
+
+...Program finished with exit code 0
+Press ENTER to exit console.

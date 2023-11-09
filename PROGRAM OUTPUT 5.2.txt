@@ -1,0 +1,6 @@
+Enter an integer: 4
+Sum of the digits of 4 is 4
+
+
+...Program finished with exit code 0
+Press ENTER to exit console.

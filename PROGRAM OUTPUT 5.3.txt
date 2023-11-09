@@ -1,0 +1,7 @@
+Enter an integer: 5
+5 is an Armstrong number.
+
+
+...Program finished with exit code 0
+Press ENTER to exit console.
+

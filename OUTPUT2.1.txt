@@ -1,0 +1,10 @@
+Enter the first number: 12
+Enter the second number: 6
+Sum: 18
+Difference: 6
+Product: 72
+Remainder: 0
+
+
+...Program finished with exit code 0
+Press ENTER to exit console.

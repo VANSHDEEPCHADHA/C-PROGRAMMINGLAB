@@ -1,0 +1,6 @@
+Enter the number of terms to print in the Fibonacci sequence: 2
+Fibonacci Sequence: 0, 1, 
+
+
+...Program finished with exit code 0
+Press ENTER to exit console.

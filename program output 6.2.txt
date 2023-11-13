@@ -1,0 +1,8 @@
+Enter the size of the array: 2
+Enter 2 elements:
+11,12
+Sorted array:
+0 11 
+
+...Program finished with exit code 0
+Press ENTER to exit console.

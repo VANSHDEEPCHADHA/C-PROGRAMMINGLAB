@@ -1,0 +1,47 @@
+#include <stdio.h>
+#include <string.h>
+
+int main() {
+    char str1[50] = "Hello";
+    char str2[50] = "World";
+    char concatStr[100];
+    char copyStr[50];
+    char upperStr[50];
+    char lowerStr[50];
+    char revStr[50];
+
+    // String Length
+    printf("Length of str1: %ld\n", strlen(str1));
+
+    // String Concatenation
+    strcpy(concatStr, str1);
+    strcat(concatStr, " ");
+    strcat(concatStr, str2);
+    printf("Concatenated string: %s\n", concatStr);
+
+    // String Copy
+    strcpy(copyStr, str1);
+    printf("Copied string: %s\n", copyStr);
+
+    // String Comparison
+    if (strcmp(str1, str2) == 0) {
+        printf("Strings are equal\n");
+    } else {
+        printf("Strings are not equal\n");
+    }
+
+    // String Upper and Lowercase
+    strcpy(upperStr, str1);
+    strcpy(lowerStr, str2);
+    printf("Uppercase str1: %s\n", strupr(upperStr));
+    printf("Lowercase str2: %s\n", strlwr(lowerStr));
+
+    // String Reversal
+    strcpy(revStr, str1);
+    strrev(revStr);
+    printf("Reversed str1: %s\n", revStr);
+
+    return 0;
+}
+
+

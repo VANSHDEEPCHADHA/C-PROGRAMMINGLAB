@@ -1,0 +1,6 @@
+Enter a string: 2
+2 is a palindrome.
+
+
+...Program finished with exit code 0
+Press ENTER to exit console.

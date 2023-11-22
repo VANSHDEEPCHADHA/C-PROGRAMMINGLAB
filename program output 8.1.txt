@@ -1,0 +1,8 @@
+Length of string1:12
+string1 and string2 are not equal
+substring world
+
+
+...program finished with exit console 0
+
+press ENTER to console

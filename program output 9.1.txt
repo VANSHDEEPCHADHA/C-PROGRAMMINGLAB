@@ -1,0 +1,7 @@
+Enter an operator (+, -, *, /): +2
+Enter two numbers: 2,4
+Result: 4.00
+
+
+...Program finished with exit code 0
+Press ENTER to exit console.

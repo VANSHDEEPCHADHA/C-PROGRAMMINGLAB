@@ -1,0 +1,30 @@
+#include <stdio.h>
+
+// Function to calculate the Fibonacci sequence using recursion
+int fibonacci(int n) {
+    if (n <= 1)
+        return n;
+    else
+        return fibonacci(n - 1) + fibonacci(n - 2);
+}
+
+// Function to print the Fibonacci sequence up to a given limit
+void printFibonacci(int limit) {
+    int i;
+    printf("Fibonacci Series up to %d terms:\n", limit);
+    for (i = 0; i < limit; i++) {
+        printf("%d ", fibonacci(i));
+    }
+    printf("\n");
+}
+
+int main() {
+    int n;
+
+    printf("Enter the number of terms: ");
+    scanf("%d", &n);
+
+    printFibonacci(n);
+
+    return 0;
+}

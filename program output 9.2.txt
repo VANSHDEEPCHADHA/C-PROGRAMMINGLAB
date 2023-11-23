@@ -1,0 +1,7 @@
+Enter the number of terms: 2
+Fibonacci Series up to 2 terms:
+0 1 
+
+
+...Program finished with exit code 0
+Press ENTER to exit console.

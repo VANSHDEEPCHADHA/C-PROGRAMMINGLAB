@@ -1,0 +1,13 @@
+Before swapping:
+num1 = 10, num2 = 20
+
+After swapping by value:
+num1 = 10, num2 = 20
+
+After swapping by reference:
+num1 = 20, num2 = 10
+
+
+...Program finished with exit code 0
+Press ENTER to exit console.
+

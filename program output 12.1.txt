@@ -1,0 +1,25 @@
+nter name of student 1: rahul
+Enter marks of 5 subjects for student 1:
+Enter marks of subject 1: 20
+Enter marks of subject 2: 20
+Enter marks of subject 3: 20
+Enter marks of subject 4: 20 
+Enter marks of subject 5: 20
+Enter name of student 2: arun
+Enter marks of 5 subjects for student 2:
+Enter marks of subject 1: 20^[[B
+Enter marks of subject 2: Enter marks of subject 3: Enter marks of subject 4: Enter marks of subject 5: Enter name of student 3: Enter marks of 5 subjects for student 3:
+Enter marks of subject 1: 20
+Enter marks of subject 2: 20
+Enter marks of subject 3: 20
+Enter marks of subject 4: 20
+Enter marks of subject 5: 20
+
+Total marks of each student:
+Student 1 (rahul) - Total Marks: 100
+Student 2 (arun) - Total Marks: 20
+Student 3 () - Total Marks: 100
+
+
+...Program finished with exit code 0
+Press ENTER to exit console.

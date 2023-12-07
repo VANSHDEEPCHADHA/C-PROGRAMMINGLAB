@@ -1,0 +1,88 @@
+#include <stdio.h>
+
+#define MAX_STUDENTS 3
+#define MAX_SUBJECTS 5
+
+// Structure to store student marks
+struct StudentMarks {
+    char name[50];
+    int marks[MAX_SUBJECTS];
+};
+
+// Function to write student marks data to a file
+void writeStudentData(struct StudentMarks students[]) {
+    FILE *filePointer;
+    filePointer = fopen("student_data.txt", "w");
+
+    if (filePointer == NULL) {
+        printf("File could not be opened.\n");
+        return;
+    }
+
+    for (int i = 0; i < MAX_STUDENTS; ++i) {
+        fprintf(filePointer, "%s ", students[i].name);
+        for (int j = 0; j < MAX_SUBJECTS; ++j) {
+            fprintf(filePointer, "%d ", students[i].marks[j]);
+        }
+        fprintf(filePointer, "\n");
+    }
+
+    fclose(filePointer);
+    printf("Student data written to file successfully.\n");
+}
+
+// Function to read student marks data from a file
+void readStudentData() {
+    FILE *filePointer;
+    struct StudentMarks students[MAX_STUDENTS];
+
+    filePointer = fopen("student_data.txt", "r");
+
+    if (filePointer == NULL) {
+        printf("File could not be opened.\n");
+        return;
+    }
+
+    printf("Reading student data from file:\n");
+    for (int i = 0; i < MAX_STUDENTS; ++i) {
+        fscanf(filePointer, "%s", students[i].name);
+        for (int j = 0; j < MAX_SUBJECTS; ++j) {
+            fscanf(filePointer, "%d", &students[i].marks[j]);
+        }
+    }
+
+    fclose(filePointer);
+
+    // Displaying read student data
+    for (int i = 0; i < MAX_STUDENTS; ++i) {
+        printf("Student %d: %s\nMarks: ", i + 1, students[i].name);
+        for (int j = 0; j < MAX_SUBJECTS; ++j) {
+            printf("%d ", students[i].marks[j]);
+        }
+        printf("\n");
+    }
+}
+
+int main() {
+    struct StudentMarks students[MAX_STUDENTS];
+
+    // Input student information and marks
+    for (int i = 0; i < MAX_STUDENTS; ++i) {
+        printf("Enter name of student %d: ", i + 1);
+        scanf("%s", students[i].name);
+
+        printf("Enter marks of 5 subjects for student %d:\n", i + 1);
+        for (int j = 0; j < MAX_SUBJECTS; ++j) {
+            printf("Enter marks of subject %d: ", j + 1);
+            scanf("%d", &students[i].marks[j]);
+        }
+    }
+
+    // Writing student data to a file
+    writeStudentData(students);
+
+    // Reading student data from a file
+    readStudentData();
+
+    return 0;
+}

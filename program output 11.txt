@@ -1,0 +1,9 @@
+Memory allocated using malloc() successfully
+Memory allocated using calloc() successfully
+Memory allocated using malloc() for realloc() successfully
+Memory reallocated using realloc() successfully
+Memory freed successfully
+
+
+...Program finished with exit code 0
+Press ENTER to exit console.

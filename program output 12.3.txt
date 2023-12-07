@@ -1,0 +1,8 @@
+Student Information:
+Name: rahul
+Age: 18
+Student ID: 15
+
+
+...Program finished with exit code 0
+Press ENTER to exit console.

@@ -1,0 +1,10 @@
+Enter some text to write to the file (max 100 characters):
+35
+Data written to file successfully.
+
+Reading from file:
+35
+
+
+...Program finished with exit code 0
+Press ENTER to exit console.

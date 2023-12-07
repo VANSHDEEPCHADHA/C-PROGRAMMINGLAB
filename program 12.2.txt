@@ -1,0 +1,38 @@
+#include <stdio.h>
+#include <string.h>
+
+// Union to store student information
+union StudentInfo {
+    char studentID[20];
+    char rollNumber[15];
+    char registrationNumber[20];
+};
+
+// Structure to hold additional details along with student information
+struct Student {
+    union StudentInfo info;
+    char name[50];
+    int age;
+};
+
+int main() {
+    struct Student student;
+
+    // Taking input for student information
+    printf("Enter student name: ");
+    scanf("%s", student.name);
+    
+    printf("Enter student age: ");
+    scanf("%d", &student.age);
+
+    printf("Enter student ID, Roll Number, or Registration Number: ");
+    scanf("%s", student.info.studentID); // You can input any of the union members
+    
+    // Displaying the entered student information
+    printf("\nStudent Information:\n");
+    printf("Name: %s\n", student.name);
+    printf("Age: %d\n", student.age);
+    printf("Student ID: %s\n", student.info.studentID);
+    
+    return 0;
+}

@@ -1,0 +1,8 @@
+Data written to file successfully.
+
+Reading from file:
+1
+
+
+...Program finished with exit code 0
+Press ENTER to exit console.

@@ -1,0 +1,36 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main() {
+    FILE *filePointer;
+    char data[100];
+
+    // Writing to a file
+    filePointer = fopen("sample.txt", "w");
+    if (filePointer == NULL) {
+        printf("File could not be opened.\n");
+        return 1;
+    }
+
+    printf("Enter some text to write to the file (max 100 characters):\n");
+    fgets(data, sizeof(data), stdin);
+    
+    fprintf(filePointer, "%s", data);
+    fclose(filePointer);
+    printf("Data written to file successfully.\n\n");
+
+    // Reading from a file
+    filePointer = fopen("sample.txt", "r");
+    if (filePointer == NULL) {
+        printf("File could not be opened.\n");
+        return 1;
+    }
+
+    printf("Reading from file:\n");
+    while (fgets(data, sizeof(data), filePointer) != NULL) {
+        printf("%s", data);
+    }
+
+    fclose(filePointer);
+    return 0;
+}

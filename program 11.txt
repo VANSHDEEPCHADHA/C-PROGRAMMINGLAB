@@ -1,0 +1,59 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main() {
+    // Using malloc()
+    int *ptr_malloc;
+    int size_malloc = 5;
+    
+    ptr_malloc = (int *)malloc(size_malloc * sizeof(int));
+    if (ptr_malloc == NULL) {
+        printf("Memory allocation failed using malloc()\n");
+        return 1;
+    }
+    
+    printf("Memory allocated using malloc() successfully\n");
+
+    // Using calloc()
+    int *ptr_calloc;
+    int size_calloc = 7;
+    
+    ptr_calloc = (int *)calloc(size_calloc, sizeof(int));
+    if (ptr_calloc == NULL) {
+        printf("Memory allocation failed using calloc()\n");
+        return 1;
+    }
+    
+    printf("Memory allocated using calloc() successfully\n");
+
+    // Using realloc()
+    int *ptr_realloc;
+    int size_realloc = 3;
+    
+    ptr_realloc = (int *)malloc(size_realloc * sizeof(int));
+    if (ptr_realloc == NULL) {
+        printf("Memory allocation failed using malloc() for realloc()\n");
+        return 1;
+    }
+
+    printf("Memory allocated using malloc() for realloc() successfully\n");
+
+    // Reallocating memory using realloc()
+    int new_size_realloc = 5;
+    ptr_realloc = (int *)realloc(ptr_realloc, new_size_realloc * sizeof(int));
+    if (ptr_realloc == NULL) {
+        printf("Memory reallocation failed using realloc()\n");
+        return 1;
+    }
+
+    printf("Memory reallocated using realloc() successfully\n");
+
+    // Freeing allocated memory
+    free(ptr_malloc);
+    free(ptr_calloc);
+    free(ptr_realloc);
+
+    printf("Memory freed successfully\n");
+
+    return 0;
+}
